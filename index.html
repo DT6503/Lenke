@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   
+   <section class="hero" id="home">
+    <header class="header">
+        <nav class="nav">
+           <a class="logo" href="#">
+                <img src="visitka.jpg" alt="Лого" class="logo-image">
+                DT65
+            </a>
+            <ul class="nav-list">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#achievements">Достижения</a></li>
+                <li><a href="#technologies">Стек технологий</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="photo-pattern">
+        <img src="uzor1.png" alt="Узор 1" class="pattern-photo">
+        <img src="uzor1.png" alt="Узор 3" class="pattern-photo">
+        <img src="uzor3.png" alt="Вертикальный узор" class="pattern-photo" data-vertical="top">
+        <img src="uzor1.png" alt="Вертикальный узор" class="pattern-photo" data-vertical="bottom">
+    </div>
+
+    <div class="container">
+        <div class="hero-content">
+            <h1>Привет! Я Дарья — C++, Qt, Rust, Web-разработчик</h1>
+            <h2>Создаю быстрые, адаптивные и современные приложения и веб-сайты.</h2>
+            <p>Специализируюсь на бэкенд- и фронтенд-разработке, превращая макеты в интерактивные и удобные интерфейсы и приложения. Использую современный стек технологий для достижения результата.</p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Связаться со мной</a>
+                <a href="#portfolio" class="btn btn-secondary">Посмотреть работы</a>
+            </div>
+
+            <div class="social-links">
+                <!-- иконки соцсетей -->
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="me.jpg" alt="Фото Дарья">
+        </div>
+    </div>
+
+    <a href="#portfolio" class="scroll-down-link">
+        <span>Мои работы</span>
+    </a>
+</section>
+
+<!--
+<div class="video-background">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="video.mp4" type="video/mp4">
+
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+-->
+
+<!-- Секция "Портфолио" -->
+<!-- Секция "Портфолио" -->
+<section class="portfolio-section" id="portfolio">
+
+
+    <div class="portfolio-container">
+
+        
+        <h2 class="section-title">Мои Работы</h2>
+       <!-- <p class="section-subtitle">Реализованные проекты и приложения</p>-->
+        
+        <div class="portfolio-grid">
+            <!-- Проект 1 - Jarvis -->
+            <div class="portfolio-card">
+                <div class="portfolio-header">
+                    <span class="project-emoji">🤖</span>
+                </div>
+                
+                <div class="portfolio-body">
+                    <h3 class="portfolio-title">Jarvis - Голосовой ассистент</h3>
+                    <p class="portfolio-description">
+                        Персональный помощник на C++ с распознаванием команд через ключевые слова. 
+                        Воспроизводит звуковые эффекты, интегрируется с браузером и выполняет 
+                        пользовательские запросы автоматически.
+                    </p>
+                </div>
+                
+                <div class="portfolio-tech-wrapper">
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">irrKlang</span>
+                        <span class="tech-tag">Многопоточность</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-footer">
+                    <div class="portfolio-links">
+                        <a href="https://github.com/DT6503/Jarvis_Final.git" target="_blank" class="portfolio-link">Jarvis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 2 - Веб-сервер -->
+            <div class="portfolio-card">
+                <div class="portfolio-header">
+                    <span class="project-emoji">🌐</span>
+                </div>
+                
+                <div class="portfolio-body">
+                    <h3 class="portfolio-title">Асинхронный HTTP-сервер</h3>
+                    <p class="portfolio-description">
+                        Высокопроизводительный веб-сервер на C++ с поддержкой асинхронных операций 
+                        через корутины. Обрабатывает GET-запросы с маршрутизацией, логированием 
+                        и отправкой ответов с HTTP-заголовками.
+                    </p>
+                </div>
+                
+                <div class="portfolio-tech-wrapper">
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Boost.Asio</span>
+                        <span class="tech-tag">Корутины</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-footer">
+                    <div class="portfolio-links">
+                        <a href="https://github.com/DT6503/Rest-server" target="_blank" class="portfolio-link">Web-server</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 3 - Qt игры -->
+            <div class="portfolio-card">
+                <div class="portfolio-header">
+                    <span class="project-emoji">🎮</span>
+                </div>
+                
+                <div class="portfolio-body">
+                    <h3 class="portfolio-title">Обучающие игры на Qt</h3>
+                    <p class="portfolio-description">
+                        Три мини-игры для развития когнитивных способностей и скорости реакции. 
+                        "Весёлая ферма" тренирует координацию, "Светофор" - скорость реакции, 
+                        "Реакция на звук" - слуховое восприятие с уровнями сложности.
+                    </p>
+                </div>
+                
+                <div class="portfolio-tech-wrapper">
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Qt</span>
+                        <span class="tech-tag">UI/UX</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-footer">
+                    <div class="portfolio-links">
+                        <a href="https://github.com/DT6503/Pig.git" target="_blank" class="portfolio-link">Ферма</a>
+                        <a href="https://github.com/DT6503/TrafficLight.git" target="_blank" class="portfolio-link">Светофор</a>
+                        <a href="https://github.com/DT6503/SoundReaction.git" target="_blank" class="portfolio-link">Звук</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 4 - RPA робот -->
+            <div class="portfolio-card">
+                <div class="portfolio-header">
+                    <span class="project-emoji">⚙️</span>
+                </div>
+                
+                <div class="portfolio-body">
+                    <h3 class="portfolio-title">RPA-робот для парсинга</h3>
+                    <p class="portfolio-description">
+                        Автоматизированная система мониторинга цен и наличия товаров на маркетплейсах. 
+                        Интегрируется с Google Sheets API, выполняет парсинг данных, валидацию 
+                        и визуализацию изменений в реальном времени.<br>
+                        <br>
+                    </p>
+                </div>
+                
+                <div class="portfolio-tech-wrapper">
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">R</span>
+                        <span class="tech-tag">Google API</span>
+                        <span class="tech-tag">Парсинг</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-footer">
+                    <div class="portfolio-links">
+                        <a href="https://drive.google.com/drive/folders/13m2WMgxOv79Lxvxk-4ppI-" target="_blank" class="portfolio-link">Сертификаты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Секция "Достижения" - особенный дизайн -->
+<section class="achievements-section" id="achievements">
+
+<!---->
+<div class="video-background">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="video.mp4" type="video/mp4">
+
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+<!-- Узоры по бокам
+    <div class="pattern-left">
+        <img src="r1.png" alt="Узор слева" class="side-pattern">
+    </div>
+    <div class="pattern-right">
+        <img src="r1.png" alt="Узор справа" class="side-pattern">
+    </div> -->
+
+    <div class="achievements-container">
+        <h2 class="section-title">Мои Достижения</h2>
+       <!-- <p class="section-subtitle">Профессиональные успехи и признание</p>-->
+        
+        <div class="achievements-timeline">
+            <!-- Достижение 1 -->
+            
+            <!-- Достижение 2 -->
+            <div class="achievement-item">
+                <div class="achievement-badge">
+                    <span class="badge-icon">🎓</span>
+                    <div class="badge-line"></div>
+                </div>
+                <div class="achievement-content">
+                    <h3 class="achievement-title">Высшее образование</h3>
+                    <span class="achievement-date">Сентябрь 2023 – Настоящее время</span>
+                    <p class="achievement-description">
+                        Учусь в Академии управления при Президенте Республики Беларусь по специальности 
+                        "Управление информационными ресурсами".
+                    </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">Академия управления</span>
+                        <span class="meta-item">Бакалавриат</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Достижение 3 -->
+            <div class="achievement-item">
+                <div class="achievement-badge">
+                    <span class="badge-icon">📜</span>
+                    <div class="badge-line"></div>
+                </div>
+                <div class="achievement-content">
+                    <h3 class="achievement-title">Сертификация</h3>
+                    <span class="achievement-date">2024 год</span>
+                    <p class="achievement-description">
+                        Получила сертификаты по четырём платформам.
+                        Разработала автоматизированную систему мониторинга для бизнеса.
+                    </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">4 сертификата</span>
+                        <span class="meta-item">Разработка</span>
+                    </div>
+                    <div class="achievement-links">
+                        <a href="https://drive.google.com/drive/folders/13m2WMgxOv79Lxvxk-4" 
+                           target="_blank" class="achievement-link">Посмотреть сертификаты</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Достижение 4 -->
+            <div class="achievement-item">
+                <div class="achievement-badge">
+                    <span class="badge-icon">🌍</span>
+                    <div class="badge-line"></div>
+                </div>
+                <div class="achievement-content">
+                    <h3 class="achievement-title">Английский язык B1</h3>
+                    <span class="achievement-date">Постоянное развитие</span>
+                    <p class="achievement-description">
+                        Владею английским языком на уровне B1, что позволяет читать техническую документацию, 
+                        участвовать в международных проектах и продолжать профессиональное развитие.
+                    </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">Уровень B1</span>
+                        <span class="meta-item">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Достижение 5 -->
+            <div class="achievement-item">
+                <div class="achievement-badge">
+                    <span class="badge-icon">💼</span>
+                    <div class="badge-line"></div>
+                </div>
+                <div class="achievement-content">
+                    <h3 class="achievement-title">Учебный проект Moodle</h3>
+                    <span class="achievement-date">2024 год</span>
+                    <p class="achievement-description">
+                        Участвовала в разработке образовательного курса в Moodle в роли ведущего разработчика 
+                        и верстальщика. Применила навыки веб-разработки в реальном проекте.
+                    </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">Moodle</span>
+                        <span class="meta-item">Веб-разработка</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-- Секция "Технологии" -->
+    <section class="technologies-section" id="technologies">
+        <div class="technologies-container">
+            <h2 class="section-title">Стек технологий</h2>
+           
+            <div class="technologies-grid">
+                <!-- Технология 1 - C++ -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="C++.webp" alt="C++" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">C++</h3>
+                    <p class="tech-description">
+                        Разработка высокопроизводительных приложений, системного программного обеспечения 
+                        и игровых движков. Опыт работы с STL, шаблонами, многопоточностью и оптимизацией памяти.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">STL</span>
+                        <span class="tech-feature">Многопоточность</span>
+                        <span class="tech-feature">Шаблоны</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 90%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый</span>
+                    </div>
+                </div>
+
+                <!-- Технология 2 - Qt -->
+                <div class="tech-card">
+                      <div class="tech-icon">
+                        <img src="Qt.jpg" alt="C++" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Qt Framework</h3>
+                    <p class="tech-description">
+                        <br>
+                        Создание кроссплатформенных desktop-приложений с современным UI/UX. 
+                        Работа с QWidgets, QML, сигналами и слотами, интеграция с базами данных.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">QWidgets</span>
+                        <span class="tech-feature">QML</span>
+                        <span class="tech-feature">Сигналы/Слоты</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 85%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый</span>
+                    </div>
+                </div>
+
+                <!-- Технология 3 - Rust -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                       <img src="Rust.png" alt="C++" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Rust</h3>
+                    <p class="tech-description">
+                        <br>
+                        Разработка безопасных и эффективных системных приложений. 
+                        Владение системой владения, трейтами, макросами и асинхронным программированием.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">Ownership</span>
+                        <span class="tech-feature">Async/Await</span>
+                        <span class="tech-feature">Macros</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 75%"></div>
+                        </div>
+                        <span class="level-text">Средний</span>
+                    </div>
+                </div>
+
+                <!-- Технология 4 - Веб-разработка -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="Web.webp" alt="C++" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Веб-разработка</h3>
+                    <p class="tech-description">
+                        <br><br>
+                        Full-stack разработка: HTML5, CSS3, JavaScript.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">HTML</span>
+                        <span class="tech-feature">CSS</span>
+                        <span class="tech-feature">JavaScript</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 80%"></div>
+                        </div>
+                        <span class="level-text">Начальный</span>
+                    </div>
+                </div>
+
+                <!-- Технология 5 - Базы данных -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                      <img src="Access.png" alt="C++" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Базы данных</h3>
+                    <p class="tech-description">
+                        <br>
+                        Проектирование и оптимизация реляционных (SQLite, Access) и NoSQL баз данных. 
+                        Написание сложных запросов, индексация, транзакции.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">SQLite</span>
+                        <span class="tech-feature">MySQL</span>
+                        <span class="tech-feature">Access</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 70%"></div>
+                        </div>
+                        <span class="level-text">Средний</span>
+                    </div>
+                </div>
+
+                <!-- Технология 6 - Git  -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="GitHub.webp" alt="C++" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Git & GitHub</h3>
+                    <p class="tech-description">
+                        <br><br>
+                        Владение системой контроля версий Git. 
+                        Опыт работы с GitHub Actions, развертыванием приложений.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">Git</span>
+                        <span class="tech-feature">GitHub</span>
+                        
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 80%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый</span>
+                    </div>
+                </div>
+
+                <!-- Технология 7 - Компьютерные сети -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                       <img src="KS.webp" alt="C++" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Компьютерные сети</h3>
+                    <p class="tech-description">
+                        Глубокое понимание сетевых технологий, протоколов и архитектур. 
+                        Опыт настройки сетевого оборудования, диагностики и оптимизации сетевой инфраструктуры.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">TCP/IP</span>
+                        <span class="tech-feature">HTTP/HTTPS</span>
+                        <span class="tech-feature">DNS</span>
+                        <span class="tech-feature">WebSockets</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 85%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
+
+
+
